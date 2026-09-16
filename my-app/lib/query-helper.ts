@@ -15,5 +15,15 @@ export async function GetBookmarks() {
     if (error) {
         throw new Error(error.message);
     }
-    return {message: "Bookmarks fetched successfully!", data};
+    return { message: "Bookmarks fetched successfully!", data };
+}
+
+export async function DeleteBookmark(id: string) {
+    const { error } = await supabase.from("bookmarks").delete().eq("id", id);
+
+    if (error) {
+        throw new Error(error.message);
+    }
+
+    return { message: "Bookmark deleted successfully!" };
 }

@@ -56,7 +56,7 @@ function Input() {
                         className: "outline-none bg-transparent border-2 border-red-500 text-base md:text-xl px-2 py-2 w-full md:w-1/3"
                     }, void 0, false, {
                         fileName: "[project]/components/input-area/page.tsx",
-                        lineNumber: 51,
+                        lineNumber: 54,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -66,7 +66,7 @@ function Input() {
                         className: "outline-none bg-transparent border-2 border-red-500 text-base md:text-xl px-2 py-2 w-full md:flex-1"
                     }, void 0, false, {
                         fileName: "[project]/components/input-area/page.tsx",
-                        lineNumber: 57,
+                        lineNumber: 60,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -75,7 +75,7 @@ function Input() {
                         children: "Submit"
                     }, void 0, false, {
                         fileName: "[project]/components/input-area/page.tsx",
-                        lineNumber: 63,
+                        lineNumber: 66,
                         columnNumber: 21
                     }, this),
                     error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -83,23 +83,23 @@ function Input() {
                         children: error
                     }, void 0, false, {
                         fileName: "[project]/components/input-area/page.tsx",
-                        lineNumber: 69,
+                        lineNumber: 72,
                         columnNumber: 31
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/input-area/page.tsx",
-                lineNumber: 50,
+                lineNumber: 53,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/input-area/page.tsx",
-            lineNumber: 49,
+            lineNumber: 52,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/input-area/page.tsx",
-        lineNumber: 48,
+        lineNumber: 51,
         columnNumber: 9
     }, this);
 }
@@ -122,15 +122,17 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$fetcher$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/fetcher.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$dist$2f$use$2d$swr$2d$emll9s78$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__u__as__default$3e$__ = __turbopack_context__.i("[project]/node_modules/swr/dist/use-swr-emll9s78.mjs [app-client] (ecmascript) <export u as default>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/axios/lib/axios.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
+;
 function List() {
     _s();
-    const { data: bookmarks, error, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$dist$2f$use$2d$swr$2d$emll9s78$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__u__as__default$3e$__["default"])("/api/bookmarks", __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$fetcher$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fetcher"], {
+    const { data: bookmarks, error, isLoading, mutate } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$dist$2f$use$2d$swr$2d$emll9s78$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__u__as__default$3e$__["default"])("/api/bookmarks", __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$fetcher$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fetcher"], {
         revalidateOnFocus: false,
         revalidateOnReconnect: false
     });
@@ -138,7 +140,7 @@ function List() {
         children: "Loading..."
     }, void 0, false, {
         fileName: "[project]/components/list-area/page.tsx",
-        lineNumber: 20,
+        lineNumber: 22,
         columnNumber: 27
     }, this);
     if (error) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -148,9 +150,21 @@ function List() {
         ]
     }, void 0, true, {
         fileName: "[project]/components/list-area/page.tsx",
-        lineNumber: 21,
+        lineNumber: 23,
         columnNumber: 23
     }, this);
+    async function handleDelete(id) {
+        try {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$axios$2f$lib$2f$axios$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].delete("/api/bookmarks", {
+                data: {
+                    id
+                }
+            });
+            mutate();
+        } catch (error) {
+            console.error("Error deleting bookmark:", error);
+        }
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "space-y-4",
@@ -165,8 +179,8 @@ function List() {
                             children: bookmark.title ?? "Untitled"
                         }, void 0, false, {
                             fileName: "[project]/components/list-area/page.tsx",
-                            lineNumber: 31,
-                            columnNumber: 5
+                            lineNumber: 44,
+                            columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             href: bookmark.url ?? "#",
@@ -176,35 +190,36 @@ function List() {
                             children: bookmark.url ?? ""
                         }, void 0, false, {
                             fileName: "[project]/components/list-area/page.tsx",
-                            lineNumber: 40,
-                            columnNumber: 5
+                            lineNumber: 53,
+                            columnNumber: 25
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>handleDelete(bookmark.id),
                             className: "w-full shrink-0 rounded bg-red-500 px-3 py-1 text-white md:w-auto",
                             children: "Delete"
                         }, void 0, false, {
                             fileName: "[project]/components/list-area/page.tsx",
-                            lineNumber: 49,
-                            columnNumber: 5
+                            lineNumber: 62,
+                            columnNumber: 25
                         }, this)
                     ]
                 }, bookmark.id, true, {
                     fileName: "[project]/components/list-area/page.tsx",
-                    lineNumber: 27,
+                    lineNumber: 40,
                     columnNumber: 21
                 }, this))
         }, void 0, false, {
             fileName: "[project]/components/list-area/page.tsx",
-            lineNumber: 25,
+            lineNumber: 38,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/list-area/page.tsx",
-        lineNumber: 24,
+        lineNumber: 37,
         columnNumber: 9
     }, this);
 }
-_s(List, "n+cjMCjuucXONVjNJnRrhnWJu0E=", false, function() {
+_s(List, "gmkvUO6lyfACIHg/Ms5OxFBdPM0=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$dist$2f$use$2d$swr$2d$emll9s78$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__u__as__default$3e$__["default"]
     ];

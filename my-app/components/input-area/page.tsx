@@ -14,8 +14,10 @@ export default function Input() {
         event.preventDefault();
         const form = event.currentTarget;
         const formData = new FormData(form);
+
         const title = formData.get("title") as string;
         const url = formData.get("url") as string;
+
         const normalizedUrl =
             url.startsWith("http://") || url.startsWith("https://")
                 ? url
@@ -26,6 +28,7 @@ export default function Input() {
                 title,
                 url: normalizedUrl
             });
+
             form.reset();
             setError("");
             await globalMutate("/api/bookmarks")
